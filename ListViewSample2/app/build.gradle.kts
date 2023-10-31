@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.listviewsample2"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.listviewsample2"
