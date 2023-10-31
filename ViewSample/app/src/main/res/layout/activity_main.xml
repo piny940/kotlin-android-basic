@@ -21,6 +21,25 @@
         android:layout_marginTop="8dp"
         android:background="#ffffff"
         android:inputType="text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#df7401">
+        <TextView
+            android:id="@+id/cbDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_drink"
+            android:layout_marginEnd="24dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/cbFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_food"
+            android:background="#ffffff"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btSave"
