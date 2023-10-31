@@ -22,6 +22,12 @@
         android:id="@+id/btClick"
         android:layout_marginTop="8dp"
         android:text="@string/bt_click" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btClear"
+        android:layout_marginTop="8dp"
+        android:text="@string/bt_clear" />
 
     <TextView
         android:layout_width="match_parent"

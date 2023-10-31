@@ -12,16 +12,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val buttonEl = findViewById<Button>(R.id.btClick)
-        buttonEl.setOnClickListener(HelloListener())
+        val btClick = findViewById<Button>(R.id.btClick)
+        btClick.setOnClickListener(HelloListener())
+
+        val btClear = findViewById<Button>(R.id.btClear)
+        btClear.setOnClickListener(HelloListener())
     }
 
     private inner class HelloListener : View.OnClickListener {
-        override fun onClick(view: View?) {
+        override fun onClick(view: View) {
             val input = findViewById<EditText>(R.id.etName)
             val output = findViewById<TextView>(R.id.tvOutput)
-            val inputStr = input.text.toString()
-            output.text = inputStr + "さん、こんにちは！"
+
+            when(view.id) {
+                R.id.btClick -> {
+                    val inputStr = input.text.toString()
+                    output.text = inputStr + "さん、こんにちは！"
+                }
+                R.id.btClear -> {
+                    input.setText("")
+                    output.text = ""
+                }
+            }
+
         }
     }
 }
