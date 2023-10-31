@@ -61,6 +61,12 @@
             android:layout_height="wrap_content"
             android:text="@string/rb_other"/>
     </RadioGroup>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:entries="@array/sp_currylist"
+        android:padding="8dp" />
     <Button
         android:id="@+id/btSave"
         android:layout_width="match_parent"
